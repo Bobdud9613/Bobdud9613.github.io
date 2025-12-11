@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Special Message For You</title>
+    <style>
+	body {
+            background-color: #000;
+            color: #ff0000;
+            font-family: 'Courier New', monospace;
+            text-align: center;
+            padding: 40px;
+            animation: flash 0.8s infinite alternate;
+        }
+        @keyframes flash { from {background:#000;} to {background:#330000;} }
+        h1 {
+            font-size: 4em;
+            text-transform: uppercase;
+            text-shadow: 0 0 20px red;
+            margin-bottom: 0;
+        }
+        .insult {
+            font-size: 2em;
+            margin: 20px;
+            letter-spacing: 3px;
+        }
+        .big {
+            font-size: 3.5em;
+            font-weight: bold;
+            color: #ff3333;
+        }
+        .blink {
+            animation: blink 0.5s infinite;
+         
+        }
+        .blink-alt {
+            animation: blink 1s infinite;
+        }
+        @keyframes blink { 50% {opacity: 0;} }
+        marquee {
+            font-size: 2em;
+            color: yellow;
+            margin: 30px 0;
+        }
+        #btn {
+            background-color: #41ba3f;
+            border: none;
+            color: white;
+            padding: 10px 30px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+        }
+      #funny {
+	    position: fixed;
+  	    top: 0;
+  	    left: 0;
+  	    width: 100%;
+  	    height: 100%;
+  	    object-fit: cover;
+  	    z-index: -1;
+  	    pointer-events: none;
+  	    display: none;
+	}
+
+    </style>
+</head>
+<body>
+    <button id="btn">← GO BACK</button>
+    <h1>HEY YOU FILTHY SCAMMING RAT</h1>
+    <div class="insult big blink">YOU ARE A WORTHLESS, SNIVELING, GREEDY LITTLE COCKROACH</div>
+    <marquee behavior="scroll" direction="left">← STEALING FROM GRANDMAS ← RUNNING PYRAMID SCHEMES ← LYING TO WIDOWS ← YOU DISGUSTING PARASITE →</marquee>
+
+    <div class="insult">Every single dollar you’ve ever stolen is cursed, you slimy piece of dog shit.<br>
+    You’re not clever, you’re not smart—you’re just a pathetic, low-IQ con artist who preys on the weak because you’re too much of a gutless coward to earn an honest living.</div>
+
+    <div class="insult big">YOUR MOTHER REGRETS BIRTHING YOU</div>
+    <img id="funny" src="https://images.freeimages.com/images/large-previews/003/sushi-roll-1321056.jpg?fmt=webp&h=350" alt="funny img" />
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const btn = document.getElementById("btn");
+  const funny = document.getElementById("funny");
+
+  btn.addEventListener("click", () => {
+    // Instantly show the image
+    funny.style.display = "block";
+    funny.style.zIndex = "999";
+
+    setTimeout(() => {
+      funny.style.display = "none";
+      funny.style.zIndex = "-1";
+    }, 200);
+  });
+});
+</script>
+
+</body>
