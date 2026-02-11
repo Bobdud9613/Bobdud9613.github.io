@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+}
+
+.navbar {
+    background-color: black;
+    overflow: hidden;
+}
+
+.navbar a {
+    float:left;
+    font-size: x-large;
+    margin: 25px;
+    color: #ffffff;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.navbar a:hover {
+    background-color: gray;
+}
+
