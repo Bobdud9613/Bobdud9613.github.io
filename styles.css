@@ -10,13 +10,20 @@
 }
 
 .navbar a {
-    float:left;
     font-size: 25px;
     margin: 25px;
     color: #ffffff;
     text-align: center;
     text-decoration: none;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.navbar .left {
+    float: left;
+}
+
+.navbar .right {
+    float: right;
 }
 
 .navbar a:hover {
