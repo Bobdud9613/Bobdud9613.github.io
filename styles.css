@@ -11,8 +11,10 @@
 }
 
 .navbar a {
+    height: 100%;
+    width: 10%;
     font-size: 25px;
-    margin: 25px;
+    padding: 25px;
     color: #ffffff;
     text-align: center;
     text-decoration: none;
@@ -25,12 +27,4 @@
 
 .navbar .right {
     float: right;
-}
-
-.navbar a:hover {
-    font-size: 30px;
-}
-
-.navbar .active {
-    font-size: 30px;
 }
