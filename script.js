@@ -1,3 +1,2 @@
 const rolandPNG = "roland.jpg"
-
-const 
+const homeBTN = document.getElementById("homeBtn");
