@@ -3,12 +3,16 @@ const image = document.getElementById("myImage");
 const homeBtn = document.getElementById("homeBtn");
 const imageList = ["AnimeBA.webp", "middleIshy.webp", "roland.jpg"]
 
-nameBtn.addEventListener("click", () => {
+nameBtn.addEventListener("mousedown", () => {
     const index = Math.floor(Math.random() * (2 - 0 + 1)) + 0;
     image.src = imageList[index];
     image.classList.remove("hidden");
 
-    setTimeout(() => {
-        image.classList.add("hidden");
-    }, 100);
+    // setTimeout(() => {
+    //     image.classList.add("hidden");
+    // }, 100);
+});
+
+nameBtn.addEventListener("mouseup", () => {
+    image.classList.add("hidden");
 });
